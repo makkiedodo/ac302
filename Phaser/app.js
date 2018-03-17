@@ -102,7 +102,7 @@ if(cursors.up.isDown && player.body.touching.down){
 
 
 game.physics.arcade.overlap(player,stars,collectStar);
-game.physics.arcade.overlap(player,enemy1,loselife);
+game.physics.arcade.overlap(player,enemy1,loseLife);
 
 moveEnemy();
 
