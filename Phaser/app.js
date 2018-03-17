@@ -80,7 +80,7 @@ function update(){
 				player.animation.play('left');
 				player.body.velocity.x = -150;
 
-			}else if(cursor.right.is Down){
+			}else if(cursor.right.isDown){
 player.animations.play('right');
 player.body.velocity.x = 150;
 
@@ -108,6 +108,7 @@ if(life =< 0){
 	endGame();
 }
 
+}
 function endGame(){
 	scorelabel.text = "GAME OVER! You scored" + score;
 	player.kill();
