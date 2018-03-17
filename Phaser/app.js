@@ -96,7 +96,7 @@ player.body.velocity.x = 150;
 	player.frame = 4;
 }
 
-if(cursor.up.isDown && player.body.touching.down){
+if(cursors.up.isDown && player.body.touching.down){
 	player.body.velocity.y = -300;
 }
 
