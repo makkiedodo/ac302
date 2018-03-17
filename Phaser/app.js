@@ -99,12 +99,12 @@ if(cursor.up.isDown && player.body.touching.down){
 }
 
 
-game.phsics.arcade.overlap(player,stars,collectStar);
+game.physics.arcade.overlap(player,stars,collectStar);
 game.physics.arcade.overlap(player,enemy1,loselife);
 
 moveEnemy();
 
-if(life =< 0){
+if(life <= 0){
 	endGame();
 }
 
