@@ -49,7 +49,7 @@ player.body.bounce.y = 0.2;
 player.body.gravity.y = 300;
 player.body.collideWorldBounds = true;
 
-player = game.add.sprite(32,400,'baddie')
+enemy1 = game.add.sprite(32,400,'baddie')
 enemy1.animations.add('left', [0,1],10,true);
 enemy1.animations.add('right',[2,3],10,true);
 game.phsics.arcade.enable.enable(enemy1);
@@ -70,9 +70,9 @@ cursors = game.input.keyboard.createCursorKeys();
 
 }
 function update(){
-	game.physics.arcade.collide(player,platform);
-		game.physics.arcade.collide(enemy1,platform);
-			game.physics.arcade.collide(stars,platform);
+	game.physics.arcade.collide(player,platforms);
+		game.physics.arcade.collide(enemy1,platforms);
+			game.physics.arcade.collide(stars,platforms);
 
 			player.body.velocity.x = 0;
 
